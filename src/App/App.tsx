@@ -21,7 +21,9 @@ export class App extends React.Component {
   }
 
   componentWillUnmount() {
-    this.unsubscribeFromDocumentHiddenEvent();
+    if (this.unsubscribeFromDocumentHiddenEvent) {
+      this.unsubscribeFromDocumentHiddenEvent();
+    }
   }
 
   render() {
