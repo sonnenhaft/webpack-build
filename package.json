@@ -6,7 +6,7 @@
   "scripts": {
     "start:production": "webpack-dev-server --open --mode production --port=8001",
     "start": "webpack-dev-server --open --mode development ",
-    "build": "webpack --mode production && build-storybook -c .storybook -o docs/storybook && npm run jest:coverage",
+    "build": "webpack --mode production && build-storybook -c .storybook -o build/storybook && npm run jest:coverage",
     "storybook": "start-storybook -p 6006",
     "jest": "jest --watchAll -i",
     "jest:coverage": "jest --collect-coverage -i"
